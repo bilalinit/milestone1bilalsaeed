@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h2>Resume Builder</h2>
+
+    <!-- Profile Picture -->
+    <div class="input-group">
+      <label for="profile-picture">Profile Picture</label>
+      <input type="file" id="profile-picture" accept="image/*" />
+      <img id="profile-picture-preview" src="#" alt="Profile Picture" style="display:none;" />
+    </div>
+
+    <!-- Name Input -->
+    <div class="input-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" />
+    </div>
+
+    <!-- Contact Details -->
+    <div class="input-group">
+      <label for="contact">Contact</label>
+      <input type="text" id="contact" placeholder="Enter your contact details" />
+    </div>
+
+    <!-- Education Section -->
+    <div class="input-group">
+      <label for="education">Education</label>
+      <input type="text" id="education" placeholder="Enter your education details" />
+    </div>
+
+    <!-- Work Experience Section -->
+    <div class="input-group">
+      <label for="work-experience">Work Experience</label>
+      <input type="text" id="work-experience" placeholder="Enter your work experience" />
+    </div>
+
+    <!-- Skills Section -->
+    <div class="skills-input-group">
+      <label for="skills">Skills</label>
+      <input type="text" id="skills" placeholder="Enter your skills" />
+      <button id="toggle-skills-btn">Hide Skills</button>
+    </div>
+
+    <!-- Generate Button -->
+    <div class="generate-button-group">
+      <button id="generate-btn">Generate</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
